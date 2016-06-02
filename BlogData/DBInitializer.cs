@@ -4,18 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using WebApplication1.Models;
+using WebApplication1.BlogData;
 
-namespace WebApplication1.Data
+namespace WebApplication1.BlogData
 {
     public class DBInitializer
     {
         private BlogDbContext _ctxt;
         private UserManager<ApplicationUser> _userManager;
 
-        public DBInitializer(BlogDbContext ctxt, UserManager<ApplicationUser> userManager)
+        public DBInitializer(BlogDbContext dbContext, UserManager<ApplicationUser> userManager)
         {
-            _ctxt = ctxt;
+            _ctxt = dbContext;
             _userManager = userManager;            
         }
 

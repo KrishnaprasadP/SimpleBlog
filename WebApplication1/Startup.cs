@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using WebApplication1.Data;
-using WebApplication1.Models;
+using WebApplication1.BlogData;
 using WebApplication1.Services;
 
 namespace WebApplication1
@@ -58,6 +58,7 @@ namespace WebApplication1
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.AddTransient<DBInitializer>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,7 +95,7 @@ namespace WebApplication1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-            Ctxt.asd();
+            Ctxt.InitializeDB();
             await dBInitializer.InitializeData();
         }
     }

@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>95d305ed-72e2-419e-87c4-34dec3b1e089</ProjectGuid>
-    <RootNamespace>ClassLibrary1</RootNamespace>
+    <ProjectGuid>6f558728-cb17-4333-ad34-b815a6beb8d5</ProjectGuid>
+    <RootNamespace>BlogData</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>

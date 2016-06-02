@@ -4,10 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.BlogData;
 
-using WebApplication1.Models;
-
-namespace WebApplication1.Data
+namespace WebApplication1.BlogData
 {
     public class BlogDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -21,7 +20,7 @@ namespace WebApplication1.Data
             
         }
 
-        public void asd()
+        public void InitializeDB()
         {
             Database.EnsureDeleted();
             Database.EnsureCreated();

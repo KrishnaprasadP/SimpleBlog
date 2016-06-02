@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WebApplication1.Models;
+using WebApplication1.BlogData;
 using WebApplication1.Models.ManageViewModels;
 using WebApplication1.Services;
 
